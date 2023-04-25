@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Navigation.module.css';
 
 function Navigation({ selectedSection, onNavigationClick }) {
   const navigationLinks = [
@@ -14,7 +15,7 @@ function Navigation({ selectedSection, onNavigationClick }) {
   };
 
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul>
         {navigationLinks.map((link) => (
           <li key={link.id}>

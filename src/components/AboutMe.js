@@ -1,8 +1,9 @@
 import React from "react";
+import styles from './AboutMe.module.css';
 
 function AboutMe() {
     return (
-        <section>
+        <section className={styles.section}>
             <h2>About Me</h2>
             <div>
                 <img src="https://via.placeholder.com/150" alt="Profile" />

@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3C16F;
+    padding: 1rem;
+  }
+  
+  footer a {
+    color: #26C485;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #A4031F;
+  }  

@@ -1,0 +1,29 @@
+nav {
+  background-color: #E3C16F;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    /* background-color: #E3C16F; */
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #A4031F;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a.active,
+  nav ul li a:hover {
+    color: #26C485;
+  }
+  

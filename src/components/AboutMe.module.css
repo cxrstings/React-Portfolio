@@ -1,0 +1,19 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #26C485;
+    padding: 2rem;
+  }
+  
+  section h2 {
+    color: #E3C16F;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    text-align: justify;
+  }  

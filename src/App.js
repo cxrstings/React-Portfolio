@@ -6,6 +6,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import styles from './App.module.css';
 
 function App() {
   const [selectedSection, setSelectedSection] = useState('about');
@@ -32,10 +33,12 @@ function App() {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       <Header />
       <Navigation selectedSection={selectedSection} onNavigationClick={handleNavigationClick} />
-      {sectionComponent}
+      <div className={styles.content}>
+        {sectionComponent}
+      </div>
       <Footer />
     </div>
   );

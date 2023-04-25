@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './Portfolio.module.css';
 
 const Portfolio = () => {
     const projects = [
@@ -41,7 +42,7 @@ const Portfolio = () => {
     ];
 
     return (
-        <div className='portfolio'>
+        <div className={styles.portfolio}>
             {projects.map((project, index) => (
                 <div key={index} className='project'>
                     <h2>{project.title}</h2>
