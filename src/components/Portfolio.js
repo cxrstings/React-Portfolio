@@ -5,37 +5,37 @@ const Portfolio = () => {
     const projects = [
         {
             title: 'Animal Shelter',
-            imgSrc: '/images/animalshelter.jpg',
+            imgSrc: process.env.PUBLIC_URL + '/images/animalshelter.jpg',
             deployLink: 'https://project2-animal-shelter.herokuapp.com/',
             githubLink: 'https://github.com/marywebby/animal-shelter',
         },
         {
             title: 'Movie Mash',
-            imgSrc: '/images/moviemash.jpg',
+            imgSrc: process.env.PUBLIC_URL + '/images/moviemash.jpg',
             deployLink: 'https://scicluna.github.io/movie-mash/',
             githubLink: 'https://github.com/scicluna/movie-mash',
         },
         {
             title: 'JavaScript Quiz',
-            imgSrc: '/images/jsquiz.jpg',
+            imgSrc: process.env.PUBLIC_URL + '/images/jsquiz.jpg',
             deployLink: 'https://github.com/cxrstings/javascript-quiz',
             githubLink: 'https://cxrstings.github.io/javascript-quiz/',
         },
         {
             title: 'Weather Dashboard',
-            imgSrc: '/images/weather.jpg',
+            imgSrc: process.env.PUBLIC_URL + '/images/weather.jpg',
             deployLink: 'https://cxrstings.github.io/weather-forecast/',
             githubLink: 'https://github.com/cxrstings/weather-forecast',
         },
         {
             title: 'My Previous Portfolio',
-            imgSrc: '/images/portfolio.jpg',
+            imgSrc: process.env.PUBLIC_URL + '/images/portfolio.jpg',
             deployLink: 'https://cxrstings.github.io/myportfolio/',
             githubLink: 'https://github.com/cxrstings/myportfolio',
         },
         {
             title: 'Password Generator',
-            imgSrc: '/images/passgen.jpg',
+            imgSrc: process.env.PUBLIC_URL + '/images/passgen.jpg',
             deployLink: 'https://cxrstings.github.io/javascriptPasswordGenerator/',
             githubLink: 'https://github.com/cxrstings/javascriptPasswordGenerator',
         },
