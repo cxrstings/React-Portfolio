@@ -1,41 +1,57 @@
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2rem;
-    background-color: #26C485;
-  }
-  
-  .project {
-    flex-basis: calc(50% - 2rem);
-    margin: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
-  }
-  
-  .project:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .project h2 {
-    color: #E3C16F;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .links {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
-  
-  .links a {
-    color: #26C485;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .links a:hover {
-    color: #E3C16F;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #26C485;
+}
+
+.project {
+  flex-basis: calc(50% - 2rem);
+  margin: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project h2 {
+  color: #E3C16F;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #26C485;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #E3C16F;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #A4031F;
+  color: #26C485;
+  border-color: #E3C16F;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
