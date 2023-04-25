@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className={styles.aboutcontainer}>
       <div className={styles.aboutimage}>
-        <img src= " process.env.PUBLIC_URL + '/images/me.jpg'" alt="Your name" />
+        <img src={`${process.env.PUBLIC_URL}/images/me.jpg`} alt="Corbin Johns" />
       </div>
       <div className={styles.abouttext}>
         <h2>About Me</h2>
