@@ -4,6 +4,12 @@ import styles from './Portfolio.module.css';
 const Portfolio = () => {
     const projects = [
         {
+            title: 'GigIt',
+            imgSrc: process.env.PUBLIC_URL + '/images/gigit.png',
+            deployLink: 'https://gigit.herokuapp.com/',
+            githubLink: 'https://github.com/lsieck519/GigIt',
+        },
+        {
             title: 'Animal Shelter',
             imgSrc: process.env.PUBLIC_URL + '/images/animalshelter.jpg',
             deployLink: 'https://project2-animal-shelter.herokuapp.com/',
