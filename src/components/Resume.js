@@ -14,7 +14,9 @@ function Resume() {
   return (
     <section className={styles.section}>
       <h2>Resume</h2>
-      <a href="my_resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+      <a href="my_resume.pdf" target="_blank" rel="noopener noreferrer">Download My Resume</a>
+      <h2>Ceritifcate</h2>
+      <a href="my_certificate.pdf" target="_blank" rel="noopener noreferrer">Download My Ceritifcate</a>
       <h3>Proficiencies:</h3>
       <ul>
         {proficiencies.map((proficiency, index) => (

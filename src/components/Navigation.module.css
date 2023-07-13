@@ -1,28 +1,45 @@
-nav {
+.aside {
   background-color: #E3C16F;
-  width: 100%;
+  width: 250px; /* Adjust the width of the aside as needed */
+  height: 100%;
   padding: 1rem 0;
+  position: fixed; /* Make the aside fixed to the side of the screen */
+  top: 0;
+  left: 0;
+  transform: translateX(-100%); /* Initially hide the aside */
+  transition: transform 0.3s ease-out; /* Smooth slide-out transition */
+  overflow: auto; /* Scrollable if the content is too tall */
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 1rem;
-  }
-  
-  nav ul li a {
-    color: #A4031F;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a.active,
-  nav ul li a:hover {
-    color: #26C485;
-  }
-  
+.asideVisible {
+  transform: translateX(0); /* Show the aside when the class is added */
+}
+
+.aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aside ul li {
+  margin: 0 1rem;
+}
+
+.aside ul li a {
+  color: #A4031F;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.aside ul li a.active,
+.aside ul li a:hover {
+  color: #26C485;
+}
+
+/* Styles for the hamburger menu */
+.fiMenu {
+  font-size: 1.5rem; /* Adjust size as needed */
+  cursor: pointer;
+  position: absolute;
+  top: 1rem; /* Adjust position as needed */
+  left: 1rem;
+}
