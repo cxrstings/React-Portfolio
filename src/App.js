@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
 import Navigation from './components/Navigation';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
@@ -34,7 +33,6 @@ function App() {
 
   return (
     <div className={styles.container}>
-      <Header />
       <Navigation selectedSection={selectedSection} onNavigationClick={handleNavigationClick} />
       <div className={styles.content}>
         {sectionComponent}
