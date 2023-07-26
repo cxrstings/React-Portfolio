@@ -2,17 +2,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E3C16F;
+    background-color: #617073;
     padding: 1rem;
   }
   
   footer a {
-    color: #26C485;
+    color: #F1FFFA;
     text-decoration: none;
     margin: 0 1rem;
     transition: color 0.3s;
   }
   
   footer a:hover {
-    color: #A4031F;
+    color: #9B1D20;
   }  

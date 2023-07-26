@@ -1,18 +1,18 @@
 .aside {
-  background-color: #E3C16F;
-  width: 250px; /* Adjust the width of the aside as needed */
+  background-color: #617073;
+  width: 250px;
   height: 100%;
   padding: 1rem 0;
-  position: fixed; /* Make the aside fixed to the side of the screen */
+  position: fixed;
   top: 0;
   left: 0;
-  transform: translateX(-100%); /* Initially hide the aside */
-  transition: transform 0.3s ease-out; /* Smooth slide-out transition */
-  overflow: auto; /* Scrollable if the content is too tall */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+  overflow: auto;
 }
 
 .asideVisible {
-  transform: translateX(0); /* Show the aside when the class is added */
+  transform: translateX(0);
 }
 
 .aside ul {
@@ -21,25 +21,36 @@
 }
 
 .aside ul li {
-  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 1rem;
 }
 
 .aside ul li a {
-  color: #A4031F;
+  display: inline-block;
+  color: #9B1D20;
+  font-size: larger;
   text-decoration: none;
   transition: color 0.3s;
+  background-color: #7A93AC;
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  text-align: center;
+  width: 100%;
 }
 
 .aside ul li a.active,
 .aside ul li a:hover {
-  color: #26C485;
+  color: #F1FFFA;
 }
 
-/* Styles for the hamburger menu */
 .fiMenu {
-  font-size: 1.5rem; /* Adjust size as needed */
+  font-size: 1.5rem;
+  color: #F1FFFA;
   cursor: pointer;
   position: absolute;
-  top: 1rem; /* Adjust position as needed */
-  left: 1rem;
+  top: 1rem;
+  right: 1rem;
 }
