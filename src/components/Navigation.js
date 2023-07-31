@@ -27,9 +27,9 @@ function Navigation({ selectedSection, onNavigationClick }) {
             {navigationLinks.map((link) => (
               <li key={link.id}>
                 <a
-                  href={`#${link.id}`}
+                  href={link.id === 'contact' ? `mailto:cxrbinjxhns@gmail.com?subject=Website Contact` : `#${link.id}`}
                   className={selectedSection === link.id ? 'active' : ''}
-                  onClick={(event) => handleLinkClick(event, link.id)}
+                  onClick={link.id === 'contact' ? null : (event) => handleLinkClick(event, link.id)}
                 >
                   {link.title}
                 </a>

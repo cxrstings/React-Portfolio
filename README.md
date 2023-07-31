@@ -1,2 +1,6 @@
 ## Corbin's Portfolio
-To-Do: Finish ReadMe
+
+**To-Do:**
+
+    Finish README
+    Make Mobile-Friendly
