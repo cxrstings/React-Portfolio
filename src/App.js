@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navigation from './components/Navigation';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
 import Footer from './components/Footer';
 import styles from './App.module.css';
 
@@ -18,9 +17,6 @@ function App() {
   switch (selectedSection) {
     case 'portfolio':
       sectionComponent = <Portfolio />;
-      break;
-    case 'resume':
-      sectionComponent = <Resume />;
       break;
     default:
       sectionComponent = <AboutMe />;

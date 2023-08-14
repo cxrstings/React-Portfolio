@@ -7,9 +7,8 @@ function Navigation({ selectedSection, onNavigationClick }) {
 
   const navigationLinks = [
     { id: 'about', title: 'About Me' },
-    { id: 'portfolio', title: 'Portfolio' },
+    { id: 'portfolio', title: 'My Work' },
     { id: 'contact', title: 'Contact' },
-    { id: 'resume', title: 'Resume' },
   ];
 
   const handleLinkClick = (event, section) => {

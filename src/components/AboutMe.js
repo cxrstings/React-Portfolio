@@ -3,6 +3,7 @@ import styles from './AboutMe.module.css';
 
 const About = () => {
   return (
+    <>
     <div className={styles.aboutcontainer}>
       <div className={styles.aboutimage}>
         <img src={`${process.env.PUBLIC_URL}/images/me.jpg`} alt="Corbin Johns" />
@@ -20,6 +21,17 @@ const About = () => {
         </p>
       </div>
     </div>
+    <div className={styles.resume}>
+      <div className={styles.resumeSection}>
+        <h2>Resume</h2>
+        <a href="my_resume.pdf" target="_blank" rel="noopener noreferrer">Download My Resume</a>
+      </div>
+      <div className={styles.certificate}>
+        <h2>Certificate</h2>
+        <a href="my_certificate.pdf" target="_blank" rel="noopener noreferrer">Download My Certificate</a>
+      </div>
+    </div>
+    </>
   );
 };
 
